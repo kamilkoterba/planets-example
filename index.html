@@ -49,8 +49,8 @@ priority: 1.0
 {% for parent in site.categories.main %}
   <li><a>{{ parent }}</a> {{ parent.title }} {{ parent.filemane }} {{ parent.url }}
     <ul>
-    {% for posts in site.categories.[parent.subcategory] %}
-	{{posts}}
+    {% for pos in site.categories.[parent.subcategory] %}
+	<li><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></li>
     {% endfor %}
     </ul>
   </li>
