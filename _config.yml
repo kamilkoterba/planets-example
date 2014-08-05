@@ -2,4 +2,4 @@ markdown: redcarpet
 baseurl: /planets-example
 exclude: ['README.md']
 #permalink: pretty
-permalink: /:title
+permalink: /:category/:title
